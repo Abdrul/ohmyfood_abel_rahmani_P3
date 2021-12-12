@@ -1,0 +1,216 @@
+@import "libs/reset.scss";
+
+
+$primaire: #9356dc;
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$ParisBelleVille: #eaeaea;
+$Réserver: #f6f6f6;
+$hover: #f5edff;
+$background-vert: #99e2d0;
+$nouveau: #008766;
+$base-size: 20px;
+$spacing: 0 25px;
+$padding-title: 30px 0 15px 0;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: $base-size + 6px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.first-presentation {
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $ParisBelleVille;
+    box-shadow: inset 0 3px 2px #afafaf;
+}
+
+.first-presentation p {
+    padding: 0 25px 0 20px;
+    font-weight: 500;
+    color: rgb(80, 76, 76);
+    font-size: $base-size;
+}
+
+.first-presentation i {
+    font-size: $base-size;
+    color: rgb(80, 76, 76);
+}
+
+.header-presentation {
+    text-align: center;
+    background: $Réserver;
+    padding: $spacing;
+
+    h1 {
+        padding-top: 35px;
+    }
+
+    p {
+        font-size: $base-size;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+}
+
+.button-presentation {
+    margin: 35px 0 70px 0;
+    padding: 10px 15px;
+    border-radius: 250px;
+    border: none;
+    background: linear-gradient(to bottom right, $secondaire, $primaire);
+    color: white;
+}
+
+.functioning {
+    padding: $spacing;
+    margin-bottom: 50px;
+}
+
+#functioning-title {
+    padding: $padding-title;
+}
+
+.steps {
+    list-style-type: none;
+    padding-left: 0;
+    counter-reset: liste;
+
+    li {
+        border-radius: 150px;
+        margin-bottom: 15px;
+        padding: $base-size;
+        box-shadow: 0 3px 2px 0 #afafaf;
+        background: $Réserver;
+        font-weight: 700;
+        font-size: $base-size - 2px;
+        transition: .3s;
+
+
+        &:hover {
+            background: $hover;
+            color: $primaire;
+        }
+
+        &::before {
+            counter-increment: liste;
+            content: counter(liste);
+            color: #fff;
+            display: inline-block;
+            width: 25px;
+            height: auto;
+            margin-left: -28px;
+            background: $primaire;
+            border-radius: 150px;
+            padding: 0 8px;
+        }
+    }
+
+    i {
+        padding: 0 15px;
+        font-size: $base-size - 2px;
+    }
+
+}
+
+.third-article {
+    background: $Réserver;
+}
+
+.restaurant {
+    padding: $spacing;
+    padding-bottom: 65px;
+}
+
+#restaurant-title {
+    padding: $padding-title;
+}
+
+.dish {
+    margin-bottom: 15px;
+    border-radius: 15px;
+    height: 265px;
+    box-shadow: 0 0 5px gray;
+}
+
+.dish-view {
+    height: 70%;
+}
+
+.dish-img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.dish-name {
+    padding: 15px 0 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone-heart {
+    border: none;
+    background: none;
+    -webkit-background-clip: text;
+    color: black;
+
+    i {
+        padding-right: 25px;
+        font-size: $base-size + 4px;
+    }
+
+    &:hover {
+        background: linear-gradient($secondaire, $primaire);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+}
+
+.footer-flex {
+    padding: $spacing;
+    background: #353535;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.footer-title {
+    letter-spacing: 0.5px;
+    font-family: 'Shrikhand', sans-serif;
+    padding: 25px 0 15px;
+}
+
+.footer-div {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 5px;
+
+    i {
+        width: 25px;
+        font-size: $base-size - 8px;
+    }
+}
+
+
