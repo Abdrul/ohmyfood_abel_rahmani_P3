@@ -18,7 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h2 {
     font-size: $base-size + 6px;
 }
 
@@ -173,8 +173,6 @@ a {
 .icone-heart {
     border: none;
     background: none;
-    -webkit-background-clip: text;
-    color: black;
 
     i {
         padding-right: 25px;
@@ -183,6 +181,7 @@ a {
 
     &:hover {
         background: linear-gradient($secondaire, $primaire);
+        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
     }
