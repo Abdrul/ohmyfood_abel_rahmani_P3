@@ -36,8 +36,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-size: 26px;
+h2 {
+  font-size: 24px;
 }
 
 a {
@@ -78,7 +78,7 @@ a {
   background: #f6f6f6;
   padding: 0 25px;
 }
-.header-presentation h1 {
+.header-presentation h2 {
   padding-top: 35px;
 }
 .header-presentation p {
@@ -180,19 +180,17 @@ a {
 }
 
 .icone-heart {
-  border: none;
-  background: none;
-  -webkit-background-clip: text;
-  color: black;
-}
-.icone-heart i {
   padding-right: 25px;
   font-size: 24px;
+  color: transparent;
+  -webkit-text-stroke: 2px #000;
 }
 .icone-heart:hover {
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-text-stroke: 1px #FF79DA;
 }
 
 .footer-flex {

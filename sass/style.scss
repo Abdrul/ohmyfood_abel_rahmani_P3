@@ -19,7 +19,7 @@ body {
 }
 
 h2 {
-    font-size: $base-size + 6px;
+    font-size: $base-size + 4px;
 }
 
 a {
@@ -61,7 +61,7 @@ a {
     background: $Réserver;
     padding: $spacing;
 
-    h1 {
+    h2 {
         padding-top: 35px;
     }
 
@@ -171,22 +171,20 @@ a {
 }
 
 .icone-heart {
-    border: none;
-    background: none;
-
-    i {
-        padding-right: 25px;
-        font-size: $base-size + 4px;
-    }
+    padding-right: $base-size + 5px;
+    font-size: $base-size + 4px;
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
 
     &:hover {
         background: linear-gradient($secondaire, $primaire);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        -webkit-text-stroke: 1px $secondaire;
     }
-
 }
+
 
 .footer-flex {
     padding: $spacing;
