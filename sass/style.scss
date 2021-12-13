@@ -175,6 +175,7 @@ a {
     font-size: $base-size + 4px;
     color: transparent;
     -webkit-text-stroke: 2px #000;
+    transition: 3s;
 
     &:hover {
         background: linear-gradient($secondaire, $primaire);
